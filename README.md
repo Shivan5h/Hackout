@@ -43,6 +43,21 @@ Harness AI to empower farmers with data-driven decisions, ensuring better crop y
 ### Services
 ![Screenshot from 2024-08-10 16-32-35](https://github.com/user-attachments/assets/4c326edd-4b4d-47c2-8efc-d27966fc3d99)
 
+## How To Run :-
+**Prerequisites**
+1. Node.js should be installed
+/frontend
+```
+npm i
+npm run build
+npm run start
+```
+/Backend
+```
+npm i
+npm run build
+npm run start
+```
 
 
 
