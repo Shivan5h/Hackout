@@ -1,5 +1,4 @@
 # AGROMITRA
-![diagram-export-09-08-2024-22_56_39](https://github.com/user-attachments/assets/1eb7aa24-55e1-473c-ba99-dd7c25d1ad72)
 ## Problem :-Sustainable Farming through AI: Optimizing Crop Choices and Market Success
 Harness AI to empower farmers with data-driven decisions, ensuring better crop yields and market alignment.  Transform traditional farming into a modern, efficient practice, promoting environmental sustainability and economic growth.  Enable farmers to thrive by providing insights from planting to market, fostering a resilient agricultural ecosystem.
 ## Our Idea :-
