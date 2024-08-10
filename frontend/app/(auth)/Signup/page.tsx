@@ -13,7 +13,7 @@ const SignUpPage: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3001/signup', {
+      await axios.post('https://hackout-1.onrender.com/signup', {
         email,
         password,
         fullName: name
