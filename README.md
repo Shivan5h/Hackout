@@ -34,9 +34,13 @@ Harness AI to empower farmers with data-driven decisions, ensuring better crop y
 4. **Sustainability**: Incorporate climate models for eco-friendly farming and climate adaptation.
 
 ## Some Key Demonstaration:-
+### Dashboard
 ![Screenshot from 2024-08-10 14-28-48](https://github.com/user-attachments/assets/81dcb8c2-5c60-4f89-bf6c-edf565beee31)
+### Landing Page
 ![Screenshot from 2024-08-10 14-35-50](https://github.com/user-attachments/assets/5fb89947-3f66-4734-ba88-d4c99250d8b8)
+### About
 ![Screenshot from 2024-08-10 14-35-57](https://github.com/user-attachments/assets/c0b4ee6d-36e5-4d73-aba3-4d477deca90d)
+### Services
 ![Screenshot from 2024-08-10 16-32-35](https://github.com/user-attachments/assets/4c326edd-4b4d-47c2-8efc-d27966fc3d99)
 
 
