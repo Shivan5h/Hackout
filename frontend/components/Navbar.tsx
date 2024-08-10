@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
           return;
         }
 
-        const response = await fetch('http://localhost:3001/me', {
+        const response = await fetch('https://hackout-1.onrender.com/me', {
           headers: { Authorization: `Bearer ${token}` },
         });
         
