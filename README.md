@@ -1,5 +1,5 @@
 # AGROMITRA
-![image](https://github.com/user-attachments/assets/61c4ac2a-3156-4a54-ad32-02d6f8b2582a)![image](https://github.com/user-attachments/assets/901540bd-ed1f-4fec-aa87-ed899e445353)![image](https://github.com/user-attachments/assets/8c806279-6ca7-40b2-8f6a-95fd113c006e)
+![diagram-export-09-08-2024-22_56_39](https://github.com/user-attachments/assets/1eb7aa24-55e1-473c-ba99-dd7c25d1ad72)
 ## Problem :-Sustainable Farming through AI: Optimizing Crop Choices and Market Success
 Harness AI to empower farmers with data-driven decisions, ensuring better crop yields and market alignment.  Transform traditional farming into a modern, efficient practice, promoting environmental sustainability and economic growth.  Enable farmers to thrive by providing insights from planting to market, fostering a resilient agricultural ecosystem.
 ## Our Idea :-
@@ -13,9 +13,10 @@ Harness AI to empower farmers with data-driven decisions, ensuring better crop y
 ## Workflow
 ![diagram-export-09-08-2024-22_39_52](https://github.com/user-attachments/assets/517f2722-bf4a-47c6-85d1-b6aba5e342e3)
 
-![diagram-export-09-08-2024-22_56_39](https://github.com/user-attachments/assets/1eb7aa24-55e1-473c-ba99-dd7c25d1ad72)
+
 
 ## Action Plan
+![diagram-export-09-08-2024-22_56_39](https://github.com/user-attachments/assets/1eb7aa24-55e1-473c-ba99-dd7c25d1ad72)
 ## Key features:-
 **Market Demand Analysis** :- Crop Recommendations Identifies high-demand crops and vegetables based on market trends and seasonal patterns.
 **Tailored Crop Planning** :- Location & Land-Based Insights: Suggests optimal crops based on the farmer's location, land size, and crop rotation history.
