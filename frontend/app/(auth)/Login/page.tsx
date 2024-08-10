@@ -12,7 +12,7 @@ const LoginPage: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3001/login', {
+      const response = await axios.post('https://hackout-1.onrender.com/login', {
         email,
         password
       });
