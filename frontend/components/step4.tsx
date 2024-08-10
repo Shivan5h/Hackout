@@ -21,16 +21,6 @@ const Step4: React.FC<Step4Props> = ({
       </h2>
       <form>
         <div className="mb-4">
-          <label className="block text-white mb-2">Rotation Cycle Duration</label>
-          <input
-            type="text"
-            name="Rotation_Cycle_Duration"
-            value={formData.Rotation_Cycle_Duration}
-            onChange={handleChange}
-            className="w-full p-2 border  bg-gray-700 border-gray-600 rounded-lg"
-          />
-        </div>
-        <div className="mb-4">
           <label className="block text-white mb-2">Cover Crop Use</label>
           <input
             type="text"
@@ -46,6 +36,16 @@ const Step4: React.FC<Step4Props> = ({
             type="text"
             name="Green_Manure_Impact"
             value={formData.Green_Manure_Impact}
+            onChange={handleChange}
+            className="w-full p-2 border  bg-gray-700 border-gray-600 rounded-lg"
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-white mb-2">Previous Yield</label>
+          <input
+            type="text"
+            name="Previous_Yield"
+            value={formData.Previous_Yield}
             onChange={handleChange}
             className="w-full p-2 border  bg-gray-700 border-gray-600 rounded-lg"
           />

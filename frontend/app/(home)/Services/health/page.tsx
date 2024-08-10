@@ -67,7 +67,7 @@ const CropRotationForm: React.FC = () => {
   const validateStep = (currentStep: number): boolean => {
     let isValid = true;
     let fieldsToValidate: (keyof CropRotationFormData)[] = [];
-  
+
     switch (currentStep) {
       case 1:
         fieldsToValidate = ['Previous_Crop', 'Crop_Family_Compatibility', 'Nutrient_Demand_Compatibility'];
@@ -76,7 +76,7 @@ const CropRotationForm: React.FC = () => {
         fieldsToValidate = ['Pest_Disease_Carryover_Risk', 'Soil_Nutrient_Depletion_Index', 'Soil_Fertility_Restoration_Potential'];
         break;
       case 3:
-        fieldsToValidate = ['Climate_Suitability_Overlap', 'Moisture_Compatibility', 'Rotation_Cycle_Duration']; // Include the new field here
+        fieldsToValidate = ['Climate_Suitability_Overlap', 'Moisture_Compatibility', 'Rotation_Cycle_Duration'];
         break;
       case 4:
         fieldsToValidate = ['Cover_Crop_Use', 'Green_Manure_Impact', 'Previous_Yield'];
@@ -85,7 +85,7 @@ const CropRotationForm: React.FC = () => {
         fieldsToValidate = ['Previous_Crop_Health_Score', 'Rotation_Success_Rate'];
         break;
     }
-  
+
     for (const field of fieldsToValidate) {
       if (!formData[field]) {
         alert(`Please fill in the ${field.replace(/_/g, ' ')} field.`);
@@ -93,14 +93,15 @@ const CropRotationForm: React.FC = () => {
         break;
       }
     }
-  
+
+    console.log("Step validation result:", isValid);
     return isValid;
   };
-  
+
   const calculateRecommendationScore = (data: CropRotationFormData): number => {
     console.log("Calculating recommendation score with data:", data);
 
-    const requiredFields = [
+    const requiredFields: (keyof CropRotationFormData)[] = [
       'Crop_Family_Compatibility', 'Nutrient_Demand_Compatibility', 'Pest_Disease_Carryover_Risk',
       'Soil_Nutrient_Depletion_Index', 'Soil_Fertility_Restoration_Potential', 'Climate_Suitability_Overlap',
       'Moisture_Compatibility', 'Rotation_Cycle_Duration', 'Cover_Crop_Use', 'Green_Manure_Impact',
@@ -108,8 +109,8 @@ const CropRotationForm: React.FC = () => {
     ];
 
     for (const field of requiredFields) {
-      if (isNaN(parseFloat(data[field as keyof CropRotationFormData]))) {
-        throw new Error(`Invalid value for ${field}: ${data[field as keyof CropRotationFormData]}`);
+      if (isNaN(parseFloat(data[field]))) {
+        throw new Error(`Invalid value for ${field}: ${data[field]}`);
       }
     }
 
@@ -149,7 +150,7 @@ const CropRotationForm: React.FC = () => {
       const recommendationScore = calculateRecommendationScore(formData);
       const updatedFormData = { ...formData, Recommendation_Score: recommendationScore.toString() };
       setSubmittedData(updatedFormData);
-      setRecommendationResult(`The calculated crop rotation recommendation score is ${recommendationScore}%`);
+      setRecommendationResult(`The calculated crop rotation recommendation score is ${recommendationScore}`);
       setStep(6);
       console.log("Recommendation score calculated and set:", recommendationScore);
     } catch (error) {
@@ -210,9 +211,9 @@ const CropRotationForm: React.FC = () => {
           <>
             <FormDataGrid data={submittedData} />
             {recommendationResult && (
-              <div className="mt-4 p-4 border rounded bg-gray-800 2xl:mr-[300px]">
+              <div className="mt-4 p-4 border rounded bg-gray-800">
                 <h2 className="text-xl font-bold mb-2 text-white">Recommendation Result</h2>
-                <p className="text-white ">{recommendationResult}</p>
+                <p className="text-white">{recommendationResult}</p>
               </div>
             )}
           </>

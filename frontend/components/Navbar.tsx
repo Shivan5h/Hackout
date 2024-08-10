@@ -46,6 +46,7 @@ const Navbar: React.FC = () => {
     const fetchUser = async () => {
       try {
         const token = localStorage.getItem('token');
+        console.log(token)
         if (!token) {
           router.push('/Login');
           return;
@@ -119,9 +120,9 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-20">
          <Link href="/" className="cursor-pointer bg-gray-500 pl-3 pr-5 pt-2 pb-2 rounded-full"><Image src="/logo-no-background.png" width={200} height={200} alt="Logo" /></Link> 
           <div className="hidden md:flex gap-x-6">
-            <NavLink href="/about">About Us</NavLink>
-            <NavLink href="/Services/rotation">Services</NavLink>
-            <NavLink href="/contacts">Contacts</NavLink>
+            <NavLink href="#about">About Us</NavLink>
+            <NavLink href="/Services">Services</NavLink>
+            <NavLink href="/dashboard" mobile>Dashboard</NavLink>
           </div>
           {renderUserSection()}
           <button className="md:hidden" onClick={toggleMenu}>
@@ -131,12 +132,15 @@ const Navbar: React.FC = () => {
       </div>
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-black py-4 text-white">
+        <div className="md:hidden bg-gray-900 py-4 text-white">
           <div className="container mx-auto px-4 flex flex-col gap-y-4">
-            <NavLink href="/about" mobile>About Us</NavLink>
-            <NavLink href="/Services/rotation" mobile>Services</NavLink>
-            <NavLink href="/contacts" mobile>Contacts</NavLink>
+            <NavLink href="#about" mobile>About Us</NavLink>
+            <NavLink href="/Services" mobile>Services</NavLink>
+            <NavLink href="/dashboard" mobile>Dashboard</NavLink>
             {renderUserSection()}
+            <button className="md:hidden" onClick={toggleMenu}>
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
           </div>
         </div>
       )}

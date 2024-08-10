@@ -97,7 +97,7 @@ const Dashboard: React.FC = () => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('token');
+    localStorage.getItem('token');
     setIsAuthenticated(false);
     router.push('/Login');
   };
