@@ -115,7 +115,7 @@ const YieldPredictionForm: React.FC = () => {
     ) * 100;
 
     console.log("Calculated prediction:", prediction);
-    return Math.round(prediction * 100) / 100;
+    return Math.round(prediction * 100) / 10000;
   };
 
   const handleSubmit = () => {
