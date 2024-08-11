@@ -12,7 +12,7 @@ const About = () => {
       </div>
 
       <div className="w-full md:w-1/2 flex justify-center">
-        <Image src="/—Pngtree—green agricultural rice_5411777.png" width={400} height={400} alt="About us" className="max-w-full h-auto rounded-lg shadow-lg" />
+        <Image src="/Pngtreegreen agricultural rice_5411777.png" width={400} height={400} alt="About us" className="max-w-full h-auto rounded-lg shadow-lg" />
       </div>
     </div>
   )
