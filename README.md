@@ -1,4 +1,6 @@
 # AGROMITRA
+## Youtube Link
+https://youtu.be/u_GDP9CKorQ
 ## Problem :-Sustainable Farming through AI: Optimizing Crop Choices and Market Success
 Harness AI to empower farmers with data-driven decisions, ensuring better crop yields and market alignment.  Transform traditional farming into a modern, efficient practice, promoting environmental sustainability and economic growth.  Enable farmers to thrive by providing insights from planting to market, fostering a resilient agricultural ecosystem.
 ## Our Idea :-
@@ -60,6 +62,7 @@ npm run start
 ## Project Output
 ![Screenshot from 2024-08-11 00-01-27](https://github.com/user-attachments/assets/939e5d40-a566-4c07-85b8-91a16e222cc4)
 ![Screenshot from 2024-08-11 00-04-49](https://github.com/user-attachments/assets/df34d488-fa45-4166-b872-44a56b740ff2)
+
 
 
 
